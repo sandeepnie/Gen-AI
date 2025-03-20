@@ -10,7 +10,7 @@ import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load the trained model
-model_path = os.path.join(current_dir, 'model.h5')
+model_path = os.path.join(current_dir, 'regression_model.h5')
 model = tf.keras.models.load_model(model_path)
 
 # Load the encoders and scaler
